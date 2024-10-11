@@ -37,10 +37,12 @@ const InputWrapper = styled(Flex)`
 const InputContainer = styled.div`
   width: 100%;
   border: ${({ isError }) =>
-    isError ? `1px solid ${colors.primaryColor}` : '1px solid black'};
+    isError
+      ? `1px solid ${colors.primaryColor}`
+      : `1px solid ${colors.disabled}`};
   background-color: ${colors.white};
   border-radius: 0.5rem;
-  padding: 0.8rem;
+  padding: 0.6rem;
 `;
 
 const StyledInput = styled.input`
