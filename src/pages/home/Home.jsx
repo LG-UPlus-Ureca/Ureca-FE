@@ -142,7 +142,7 @@ const SectionList = styled(Flex)`
 const fadeInUp = keyframes`
 from {
   opacity: 0;
-  transform: translateY(100px);
+  transform: translateY(120px);
 }
 to {
   opacity: 1;
@@ -152,7 +152,7 @@ to {
 
 const Section = styled.div`
   opacity: 0;
-  /* transform: translateY(40px); */
+  /* transform: translateY(60px); */
   animation: ${({ isVisible }) =>
     isVisible
       ? css`
